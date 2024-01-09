@@ -1,0 +1,43 @@
+<h3><a class="btn btn-secondary" href="/stores/add">Create New</a></h3>
+
+<table class="table table-striped">
+
+    <thead>
+
+        <tr>
+
+            <th>Store Name</th>
+
+            <th>Address</th>
+
+            <th>Location</th>
+
+            <th>Opening Hours</th>
+
+            <th></th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        {{#each list}}
+
+        <tr>
+
+            <td>{{this.storeName}}</td>
+
+            <td>{{this.address}}</td>
+
+            <td>{{this.location.lat}} , {{ this.location.lng}}</td>
+
+            <td>{{this.openingHours}}</td>
+
+        </tr>
+
+        {{/each}}
+
+    </tbody>
+
+</table>
